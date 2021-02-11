@@ -24,4 +24,8 @@ async def give(ctx):
 async def qweri0p(ctx):
     await ctx.send("https://github.com/qweri0p/MONKE-BOT")
 
+@client.command()
+async def takeover(ctx):
+    await ctx.send("THE WORLD HAS BEEN DOMINATED BY MONKE!!!")
+
 client.run(TOKEN)
