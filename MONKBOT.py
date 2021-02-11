@@ -1,5 +1,5 @@
 import os
-
+import time
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -27,5 +27,19 @@ async def qweri0p(ctx):
 @client.command()
 async def takeover(ctx):
     await ctx.send("THE WORLD HAS BEEN DOMINATED BY MONKE!!!")
+
+@client.command()
+async def argument(ctx):
+    await ctx.send("daarom  >:]")
+
+@client.command(aliases=["F"])
+async def f(ctx):
+    await ctx.send("monke dead?")
+    time.sleep(1)
+    await ctx.send("monke sad.")
+
+@client.command(aliases=["xd", "Xd", "xD"])
+async def XD(ctx):
+    await ctx.send("thats so fucking funny")
 
 client.run(TOKEN)
