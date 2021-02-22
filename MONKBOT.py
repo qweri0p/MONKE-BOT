@@ -72,4 +72,17 @@ async def war(ctx):
     else:
         await ctx.send("MONKE is launching nuuk on americ and ruski!!!")
 
+
+@client.command(aliases=["tellen", "counting"])
+async def count(ctx):
+    await ctx.send("Count Start!")
+    for i in range(5):
+        time.sleep(1.5)
+        await ctx.send(i)
+    await ctx.send("monke can't count further, monke is proud.")
+
+@client.command()
+async def monkebot(ctx):
+    await ctx.send("THATS MEEE!!!!")
+
 client.run(TOKEN)
