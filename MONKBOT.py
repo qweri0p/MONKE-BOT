@@ -52,7 +52,7 @@ async def food(ctx):
 
 @client.command(aliases=["oorlog", "WAR"])
 async def war(ctx):
-    warRNG=random.randrange(1, 5)
+    warRNG=random.randrange(1, 4)
     if warRNG==1:
         await ctx.send("MONKE KILLS THEM NAZIS!!")
     elif warRNG==2:
