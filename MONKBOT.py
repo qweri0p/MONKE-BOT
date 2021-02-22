@@ -58,7 +58,7 @@ async def war(ctx):
     elif warRNG==2:
         await ctx.send("MONKE Killz all humanz on earth.")
     elif warRNG==3:
-        await ctx.send("we monkes keel dem blooons!!!")
+        await ctx.send("us dart monkes keel dem blooons!!!")
     else:
         await ctx.send("MONKE is launching nuuk on americ and ruski!!!")
 
