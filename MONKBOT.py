@@ -3,7 +3,7 @@ import time
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
-
+import random
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 client = commands.Bot(command_prefix= '.')
@@ -49,4 +49,17 @@ async def suggesties(ctx):
 @client.command(aliases=["eten", "voedsel"])
 async def food(ctx):
     await ctx.send(":banana:")
+
+@client.command(aliases=["oorlog", "WAR"])
+async def war(ctx):
+    warRNG=random.randrange(1, 5)
+    if warRNG==1:
+        await ctx.send("MONKE KILLS THEM NAZIS!!")
+    elif warRNG==2:
+        await ctx.send("MONKE Killz all humanz on earth.")
+    elif warRNG==3:
+        await ctx.send("we monkes keel dem blooons!!!")
+    else:
+        await ctx.send("MONKE is launching nuuk on americ and ruski!!!")
+
 client.run(TOKEN)
