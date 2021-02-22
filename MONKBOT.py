@@ -13,8 +13,18 @@ async def on_ready():
     print(f'{client.user} MONKE MONKE MONKE MONKE')
 
 @client.command(aliases=["monke", "MONKE"])
-async def MONKESpam(ctx):
+async def MONKe(ctx):
     await ctx.send("MONKE")
+
+@client.command(aliases=["monkes", "MONKES", "monks", "MONKS"])
+async def spam(ctx):
+    for i in range(10):
+        await ctx.send("MONKE")
+
+@client.command(aliases=["STOP", "STAHP"])
+async def stop(ctx):
+    await ctx.send("ok")
+    exit()
 
 @client.command()
 async def give(ctx):
