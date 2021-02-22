@@ -42,4 +42,7 @@ async def f(ctx):
 async def XD(ctx):
     await ctx.send("thats so fucking funny")
 
+@client.command(aliases=["suggestion", "idea", "ideas"])
+async def suggesties(ctx):
+    await ctx.send("Stuur ideeën of suggesties naar @qweriop#0416.")
 client.run(TOKEN)
