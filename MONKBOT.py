@@ -45,4 +45,8 @@ async def XD(ctx):
 @client.command(aliases=["suggestion", "idea", "ideas"])
 async def suggesties(ctx):
     await ctx.send("Stuur ideeën of suggesties naar @qweriop#0416.")
+
+@client.command(aliases=["eten", "voedsel"])
+async def food(ctx):
+    await ctx.send(":banana:")
 client.run(TOKEN)
