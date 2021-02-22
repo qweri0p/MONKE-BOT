@@ -18,7 +18,7 @@ async def MONKe(ctx):
 
 @client.command(aliases=["monkes", "MONKES", "monks", "MONKS"])
 async def spam(ctx):
-    for i in range(100):
+    for i in range(10000):
         await ctx.send("MONKE")
         time.sleep(1)
 
