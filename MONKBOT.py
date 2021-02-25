@@ -16,12 +16,6 @@ async def on_ready():
 async def MONKe(ctx):
     await ctx.send("MONKE")
 
-@client.command(aliases=["monkes", "MONKES", "monks", "MONKS"])
-async def spam(ctx):
-    for i in range(10000):
-        await ctx.send("MONKE")
-        time.sleep(1)
-
 @client.command(aliases=["STOP", "STAHP"])
 async def stop(ctx):
     await ctx.send("ok")
