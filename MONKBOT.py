@@ -72,7 +72,7 @@ async def war(ctx):
 @client.command(aliases=["tellen", "counting"])
 async def count(ctx):
     await ctx.send("Count Start!")
-    for i in range(10):
+    for i in range(16):
         time.sleep(1.5)
         await ctx.send(i)
     time.sleep(1.5)
