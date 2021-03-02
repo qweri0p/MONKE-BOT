@@ -17,6 +17,12 @@ async def MONKe(ctx):
     await ctx.send("MONKE")
 
 @client.command()
+async def update(ctx):
+    await ctx.send("doin tha git pull")
+    os.system("git pull")
+    exit()
+
+@client.command()
 async def give(ctx):
     await ctx.send("I give u :banana:.")
 
