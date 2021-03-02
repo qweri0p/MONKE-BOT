@@ -12,14 +12,9 @@ client = commands.Bot(command_prefix= '.')
 async def on_ready():
     print(f'{client.user} MONKE MONKE MONKE MONKE')
 
-@client.command(aliases=["monke", "MONKE"])
+@client.command(aliases=["monke", "MONKE", "monk", "MONK"])
 async def MONKe(ctx):
     await ctx.send("MONKE")
-
-@client.command(aliases=["STOP", "STAHP"])
-async def stop(ctx):
-    await ctx.send("ok")
-    exit()
 
 @client.command()
 async def give(ctx):
@@ -71,9 +66,10 @@ async def war(ctx):
 @client.command(aliases=["tellen", "counting"])
 async def count(ctx):
     await ctx.send("Count Start!")
-    for i in range(5):
+    for i in range(10):
         time.sleep(1.5)
         await ctx.send(i)
+    time.sleep(1.5)
     await ctx.send("monke can't count further, monke is proud.")
 
 @client.command()
