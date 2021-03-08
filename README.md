@@ -56,7 +56,7 @@ else ask the discord.py discord server
 
 1: open cmd or terminal
 
-2: type pip/pip3 install python_dotenv_
+2: type pip/pip3 install python_dotenv
 (depending on os. if on windows use pip else use pip3)
 
 3: it done
