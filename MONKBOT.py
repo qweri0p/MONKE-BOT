@@ -50,7 +50,7 @@ async def XD(ctx):
 
 @client.command(aliases=["suggestion", "idea", "ideas"])
 async def suggesties(ctx):
-    await ctx.send("Stuur ideeën of suggesties naar @qweriop#0416.")
+    await ctx.send("@qweriop#0416.")
 
 @client.command(aliases=["eten", "voedsel"])
 async def food(ctx):
@@ -72,13 +72,13 @@ async def war(ctx):
 @client.command(aliases=["tellen", "counting"])
 async def count(ctx):
     await ctx.send("Count Start!")
-    for i in range(16):
+    for i in range(21):
         time.sleep(1.5)
         await ctx.send(i)
     time.sleep(1.5)
     await ctx.send("monke can't count further, monke is proud.")
 
-@client.command()
+@client.command(aliases=["monkbot", "ape"])
 async def monkebot(ctx):
     await ctx.send("THATS MEEE!!!!")
 
