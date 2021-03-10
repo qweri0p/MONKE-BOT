@@ -94,4 +94,8 @@ async def bloons(ctx):
 async def mc(ctx):
     await ctx.send("mine diamonks")
 
+@client.command(aliases=["FBI"])
+async def fbi(ctx):
+    await ctx.send("monke open up!")
+
 client.run(TOKEN)
