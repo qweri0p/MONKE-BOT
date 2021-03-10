@@ -11,6 +11,7 @@ client = commands.Bot(command_prefix= '.')
 @client.event
 async def on_ready():
     print(f'{client.user} MONKE MONKE MONKE MONKE')
+    await client.change_presence(activity=discord.Game(name='monking in tha jungle'))
 
 @client.command(aliases=["monke", "MONKE", "monk", "MONK"])
 async def MONKe(ctx):
