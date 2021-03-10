@@ -1,8 +1,8 @@
 MONKE-BOT
 
-*He will find you, and he will kill you.*
+*He will find you, and he will monkE you.*
 
-he do monke
+he do da monke
 
 prefix=.
 
