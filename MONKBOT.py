@@ -98,4 +98,24 @@ async def mc(ctx):
 async def fbi(ctx):
     await ctx.send("monke open up!")
 
+@client.command(aliases=["amog"])
+async def among(ctx):
+    await ctx.send("amonk us")
+
+@client.command()
+async def pokemon(ctx):
+    await ctx.send("Pokemonk")
+
+@client.command(aliases=["photo"])
+async def foto(ctx):
+    fotoRNG=random.randrange(5)
+    if fotoRNG == 0:
+        await ctx.send(file=discord.File('Images/smort.jpg'))
+    elif fotoRNG == 1:
+        await ctx.send(file=discord.File('Images/selfie.jpg'))
+    elif fotoRNG == 2:
+        await ctx.send(file=discord.File('Images/orangutan.jpg'))
+    else:
+        await ctx.send(file=discord.File('Images/teeth.jpg'))
+
 client.run(TOKEN)
