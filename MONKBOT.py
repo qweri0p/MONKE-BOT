@@ -82,4 +82,16 @@ async def count(ctx):
 async def monkebot(ctx):
     await ctx.send("THATS MEEE!!!!")
 
+@client.command(aliases=["hallo", "hello"])
+async def hi(ctx):
+    await ctx.send("hello (:")
+
+@client.command(aliases=["ballon", "baloons"])
+async def bloons(ctx):
+    await ctx.send("us dart monks send dem bloons to heccc")
+
+@client.command(aliases=["minecraft"])
+async def mc(ctx):
+    await ctx.send("mine diamonks")
+
 client.run(TOKEN)
