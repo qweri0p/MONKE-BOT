@@ -108,7 +108,7 @@ async def pokemon(ctx):
 
 @client.command(aliases=["photo"])
 async def foto(ctx):
-    fotoRNG=random.randrange(5)
+    fotoRNG=random.randrange(4)
     if fotoRNG == 0:
         await ctx.send(file=discord.File('Images/smort.jpg'))
     elif fotoRNG == 1:
