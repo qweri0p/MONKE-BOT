@@ -118,5 +118,14 @@ async def foto(ctx):
         await ctx.send(file=discord.File('Images/orangutan.jpg'))
     else:
         await ctx.send(file=discord.File('Images/teeth.jpg'))
+    
+@client.command(aliases=["no", "nee"])
+async def notfunny(ctx):
+    funnyRNG = random.randrange(2)
+    if funnyRNG == 0:
+        await ctx.send("Not funny, didn't laugh")
+    elif funnyRNG == 1:
+        await ctx.send("Thats not funny at all!")
+
 
 client.run(TOKEN)
