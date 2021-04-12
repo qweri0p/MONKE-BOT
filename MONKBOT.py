@@ -103,7 +103,7 @@ async def fbi(ctx):
 async def among(ctx):
     await ctx.send("amonk us")
 
-@client.command()
+@client.command(aliases=["pokémon", "POKEMON", "Pokemon", "Pokémon", "POKÉMON"])
 async def pokemon(ctx):
     await ctx.send("Pokemonk")
 
